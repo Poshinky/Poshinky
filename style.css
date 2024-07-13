@@ -1,193 +1,55 @@
-/* Reset and General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Global Styles */
 
 body {
+    background-color: #212121; /* Black background */
     font-family: Arial, sans-serif;
-    background-color: #1E1E1E; /* Dark Blue */
-    color: #fff;
-    line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #0077FF; /* Light Blue */
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #fff;
-}
-
-.project {
-    background-color: #1E90FF; /* Light Blue */
-    padding: 30px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.project p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.project a {
-    display: inline-block;
-    background-color: #fff;
-    color: #1E90FF; /* Light Blue */
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.project a:hover {
-    background-color: #0077FF; /* Darker Light Blue */
-    color: #fff;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-form label {
-    display: block;
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-    color: #fff;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+  }
+  
+  /* GUI Elements */
+  
+  .GUI {
+    background-color: #3498db; /* Vibrant blue */
     border-radius: 5px;
-    border: 1px solid #888;
-    background-color: #1E1E1E; /* Dark Blue */
-    color: #fff;
-}
-
-form button {
-    background-color: #1E90FF; /* Light Blue */
-    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .GUI:hover {
+    background-color: #2980b9; /* Darker vibrant blue on hover */
+  }
+  
+  .Label {
+    color: #ffffff; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .TextButton {
+    background-color: #3498db; /* Vibrant blue */
+    color: #ffffff; /* White text */
     border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 8px;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0077FF; /* Darker Light Blue */
-}
-
-footer {
-    text-align: center;
-    background-color: #1E1E1E; /* Dark Blue */
-    padding: 20px 0;
-    position: relative;
-    margin-top: 60px;
-    clear: both;
-    color: #fff;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-footer a img {
-    width: 24px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-/* Dark Blue Background */
-.dark-bg {
-    background-color: #1E1E1E;
-}
-
-/* Light Blue Background */
-.blue-bg {
-    background-color: #0077FF;
-}
+  }
+  
+  .TextButton:hover {
+    background-color: #2980b9; /* Darker vibrant blue on hover */
+  }
+  
+  /* Other Styles */
+  
+  .search {
+    background-color: #444444; /* Dark gray search bar */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .search input {
+    background-color: #333333; /* Dark gray input field */
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff; /* White text */
+  }
