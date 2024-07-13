@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background-color: #1E1E1E; /* Dark Blue */
     color: #fff;
     line-height: 1.6;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #0077FF; /* Blue */
+    background-color: #0077FF; /* Light Blue */
     padding: 20px 0;
     text-align: center;
     position: fixed;
@@ -33,10 +33,12 @@ header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 header p {
     font-size: 1.2rem;
+    color: #fff;
 }
 
 nav ul {
@@ -69,10 +71,11 @@ section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
+    color: #fff;
 }
 
 .project {
-    background-color: #1E90FF; /* Blue */
+    background-color: #1E90FF; /* Light Blue */
     padding: 30px;
     margin-bottom: 40px;
     border-radius: 10px;
@@ -90,17 +93,19 @@ section h2 {
 .project h3 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .project p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .project a {
     display: inline-block;
     background-color: #fff;
-    color: #1E90FF; /* Blue */
+    color: #1E90FF; /* Light Blue */
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 8px;
@@ -108,7 +113,7 @@ section h2 {
 }
 
 .project a:hover {
-    background-color: #0077FF; /* Darker Blue */
+    background-color: #0077FF; /* Darker Light Blue */
     color: #fff;
 }
 
@@ -120,12 +125,14 @@ ul {
 ul li {
     font-size: 1.4rem;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 form label {
     display: block;
     font-size: 1.4rem;
     margin-bottom: 8px;
+    color: #fff;
 }
 
 form input, form textarea {
@@ -135,10 +142,12 @@ form input, form textarea {
     font-size: 1.2rem;
     border-radius: 5px;
     border: 1px solid #888;
+    background-color: #1E1E1E; /* Dark Blue */
+    color: #fff;
 }
 
 form button {
-    background-color: #1E90FF; /* Blue */
+    background-color: #1E90FF; /* Light Blue */
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -149,12 +158,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #0077FF; /* Darker Blue */
+    background-color: #0077FF; /* Darker Light Blue */
 }
 
 footer {
     text-align: center;
-    background-color: #111; /* Dark */
+    background-color: #1E1E1E; /* Dark Blue */
     padding: 20px 0;
     position: relative;
     margin-top: 60px;
@@ -173,7 +182,12 @@ footer a img {
     margin-right: 5px;
 }
 
-/* Scroll Effect */
-body {
-    scroll-behavior: smooth;
+/* Dark Blue Background */
+.dark-bg {
+    background-color: #1E1E1E;
+}
+
+/* Light Blue Background */
+.blue-bg {
+    background-color: #0077FF;
 }
