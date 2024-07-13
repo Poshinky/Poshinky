@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poshinky's Portfolio</title>
+    <title>Poshinky's Futuristic Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <h1>Poshinky's Portfolio</h1>
+            <h1>Poshinky's Futuristic Portfolio</h1>
             <p>A showcase of my Roblox Studio projects and skills</p>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="projects">
+    <section id="projects" class="blue-bg">
         <div class="container">
             <h2>My Projects</h2>
             <div class="project">
@@ -27,21 +35,50 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="dark-bg">
         <div class="container">
             <h2>About Me</h2>
             <p>Introduction about yourself and your skills.</p>
-            <p>Contact me at: <a href="mailto:hessenkakaa@gmail.com">hessenkakaa@gmail.com</a></p>
+            <p>Contact me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
             <p>Discord: <a href="https://discord.com/invite/yourDiscordInviteLink"><img src="discord-icon.png" alt="Discord icon"> Poshinky</a></p>
+        </div>
+    </section>
+
+    <section id="skills" class="blue-bg">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Roblox Studio Scripting</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Clean Code Architecture</li>
+                <!-- Add more skills -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="dark-bg">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Poshinky. All rights reserved.</p>
-            <p>PayPal: <a href="https://www.paypal.com">paypal.me/poshinkyy</a></p>
+            <p>&copy; 2024 Posh. All rights reserved.</p>
+            <p>PayPal: <a href="https://www.paypal.com">paypal.me/yourPayPalID</a></p>
             <p>Discord: <a href="https://discord.com/invite/yourDiscordInviteLink"><img src="discord-icon.png" alt="Discord icon"> Poshinky</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
