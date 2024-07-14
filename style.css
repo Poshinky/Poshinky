@@ -1,55 +1,336 @@
-/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background-color: #212121; /* Black background */
-    font-family: Arial, sans-serif;
+  background: url('https://create.roblox.com/901e49075c3d3a770fec62c118ba3ccfa9212e01/assets/landing/back_drop.webp') center/cover no-repeat fixed;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+header {
+  background-color: #202020;
+  padding: 30px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  transition: background-color 0.2s ease;
+}
+
+header nav ul li.active {
+  background-color: #34aadc;
+  color: #fff;
+  border-bottom: 2px solid #34aadc;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #34aadc;
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
   }
-  
-  /* GUI Elements */
-  
-  .GUI {
-    background-color: #3498db; /* Vibrant blue */
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  50% {
+    transform: scale(1.1);
   }
-  
-  .GUI:hover {
-    background-color: #2980b9; /* Darker vibrant blue on hover */
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 30px;
+  transition: background-position 0.5s ease;
+}
+
+.hero h1,
+.hero p {
+  font-size: 48px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: spin 2s ease-in-out infinite;
+}
+
+.get-started-btn,
+.play-now-btn {
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.get-started-btn {
+  background-color: #111;
+  padding: 15px 30px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.get-started-btn a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #0091ff;
+  animation: pulse 1s ease-in-out;
+}
+
+.get-started-btn:active {
+  background-color: #0091ff;
+  animation: pulse 1s ease-in-out;
+}
+
+.play-now-btn {
+  background-color: #34C759;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.play-now-btn:hover {
+  background-color: #2ECC40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.play-now-btn:not(:hover) {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@keyframes spin {
+  0%, 100% {
+    transform: rotate(25deg);
   }
-  
-  .Label {
-    color: #ffffff; /* White text */
-    font-size: 18px;
-    font-weight: bold;
+  50% {
+    transform: rotate(-25deg);
   }
-  
-  .TextButton {
-    background-color: #3498db; /* Vibrant blue */
-    color: #ffffff; /* White text */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
+}
+
+#about,
+#pricing,
+#portfolio,
+#contact {
+  padding: 30px;
+  transition: background-color 0.5s ease;
+}
+
+#about {
+  background-color: #1a1d23;
+}
+
+#about h2,
+#about img {
+  margin-top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#skills {
+  background-color: #212529;
+}
+
+#skills ul {
+  list-style: none;
+}
+
+#skills li {
+  margin-bottom: 20px;
+}
+
+#skills i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #34aadc;
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  .TextButton:hover {
-    background-color: #2980b9; /* Darker vibrant blue on hover */
+  50% {
+    transform: translateY(-10px);
   }
-  
-  /* Other Styles */
-  
-  .search {
-    background-color: #444444; /* Dark gray search bar */
-    padding: 10px;
-    border-radius: 5px;
+}
+
+#pricing {
+  padding: 40px 20px;
+  background-color: #131313;
+}
+
+#pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#pricing th, #pricing td {
+  border: 1px solid #484848;
+  padding: 15px;
+  text-align: left;
+}
+
+#pricing th {
+  background-color: #252525;
+  color: #fff;
+}
+
+#pricing tr {
+  background-color: #171717;
+}
+
+#portfolio {
+  background-color: #212529;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.game-item {
+  background-color: #1a1d23;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.game-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.game-item h3 {
+  margin-top: 0;
+}
+
+.game-item p {
+  font-size: 16px;
+  color: #999;
+}
+
+#contact {
+  background-color: #1a1d23;
+}
+
+#contact ul {
+  list-style: none;
+}
+
+#contact li {
+  margin-bottom: 20px;
+}
+
+#contact i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #34aadc;
+  animation: bounce 1s ease-in-out;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: #34aadc;
+  animation: pulse 1s ease-in-out;
+}
+
+footer {
+  background-color: #212529;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: 100% 200px;
   }
-  
-  .search input {
-    background-color: #333333; /* Dark gray input field */
-    border: none;
-    padding: 10px;
-    width: 100%;
-    font-size: 18px;
-    color: #ffffff; /* White text */
+  #skills,
+  #pricing,
+  #portfolio,
+  #contact {
+    padding: 20px;
   }
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-size: 100% 150px;
+  }
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}

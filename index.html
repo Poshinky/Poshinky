@@ -1,95 +1,135 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poshinky's Roblox Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Studio Theme</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="home">
-        <div class="container">
-            <h1>Poshinky's Roblox Portfolio</h1>
-            <p>A showcase of my Roblox Studio projects and skills</p>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="name"><b>Poshinky</b></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="projects" class="blue-bg">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1 Name</h3>
-                <p>Description of Project 1.</p>
-                <a href="#">View Project</a>
-            </div>
-            <!-- Add more projects similarly -->
-        </div>
-    </section>
+  <section id="home" class="hero">
+    <img src="images/poshinky-img.webp" alt="Game Dev Icon" class="hero-image">
+    <div class="hero-content">
+      <h1>Welcome to my Portfolio!</h1>
+      <p>Start hiring to Get Closer To Your goal!</p>
+      <button href="#contact" class="get-started-btn">Hire me!</button>
+    </div>
+  </section>
 
-    <section id="about" class="dark-bg">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Introduction about yourself and your skills.</p>
-            <p>Contact me at: <a href="mailto:poshinky1234@gmail.com">poshinky1234@gmail.com</a></p>
-            <p>Discord: <a href="https://discord.com/invite/yourDiscordInviteLink"><img src="discord-icon.png" alt="Discord icon"> Poshinky</a></p>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>Hello My name is Poshinky You can Call me Posh, And I'm 17 Years Old!.</p>
+    </div>
+  </section>
 
-    <section id="skills" class="blue-bg">
-        <div class="container">
-            <h2>My Skills</h2>
-            <ul>
-                <li>Scripting</li>
-                <li>Project Managing</li>
-                <li>UI Designing</li>
-                <!-- Add more skills -->
-            </ul>
-        </div>
-    </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>
+        <i class="Scripter"></i>
+        <h3>Scripter</h3>
+        <p>I've Been Scripting On Roblox For 5 Years!.</p>
+      </li>
+      <li>
+        <i class="UI Designer"></i>
+        <h3>UI Designer</h3>
+        <p>I've Been A UI Designer For 4 Months.</p>
+      </li>
+    </ul>
+  </section>
 
-    <section id="pricing" class="dark-bg">
-        <div class="container">
-            <h2>Pricing</h2>
-            <p>Full Games: $50 - $1000</p>
-            <p>Per Task: $25 - $300 (depending on difficulty)</p>
-        </div>
-    </section>
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <table>
+      <tr>
+        <th>Package</th>
+        <th>Price</th>
+        <th>Features</th>
+      </tr>
+      <tr>
+        <td>Full Game</td>
+        <td>50$ - 1500$</td>
+        <td>Custom</td>
+      </tr>
+      <tr>
+        <td>Task</td>
+        <td>10$ - 500$</td>
+        <td>Specific</td>
+      </tr>
+    </table>
+  </section>
 
-    <section id="contact" class="blue-bg">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="game-grid">
+      <div class="game-item">
+        <img src="images/roblox-studio-logo.jpeg" alt="Game 1">
+        <h3>TEST 1</h3>
+        <p>This is a Place Holder.</p>
+        <a href="https://www.roblox.com/users/2348289972/profile" target="_blank">
+            <button class="play-now-btn">Play Now</button>
+          </a>
+      </div>
+      <div class="game-item">
+        <img src="images/roblox-studio-logo.jpeg" alt="Game 2">
+        <h3>TEST 2</h3>
+        <p>This is a Place Holder.</p>
+        <a href="https://www.roblox.com/users/2348289972/profile" target="_blank">
+            <button class="play-now-btn">Play Now</button>
+          </a>
+      </div>
+      <div class="game-item">
+        <img src="images/roblox-studio-logo.jpeg" alt="Game 3">
+        <h3>TEST 3</h3>
+        <p>This is a Place Holder.</p>
+        <a href="https://www.roblox.com/users/2348289972/profile" target="_blank">
+            <button class="play-now-btn">Play Now</button>
+          </a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Poshinky. All rights reserved.</p>
-            <p>PayPal: <a href="https://www.paypal.com">paypal.me/yourPayPalID</a></p>
-            <p>Discord: <a href="https://discord.com/invite/yourDiscordInviteLink"><img src="discord-icon.png" alt="Discord icon"> Poshinky</a></p>
-        </div>
-    </footer>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>
+        <i class="fab fa-twitter"></i>
+        <h3>Discord</h3>
+        <p>@Poshinky</p>
+      </li>
+      <li>
+        <i class="fab fa-instagram"></i>
+        <h3>Youtube</h3>
+        <p>@Hot_Coder</p>
+      </li>
+      <li>
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>@poshinky1234@gmail.com</p>
+      </li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Poshinky</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"></script>
 </body>
+<script src="functions.js"></script>
 </html>
